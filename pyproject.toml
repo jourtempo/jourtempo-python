@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jourtempo"
+version = "0.1.0"
+description = "Couleur Tempo EDF du jour et de demain, jours EJP et jours PP, depuis l'API gratuite et sans clé de Jour Tempo"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Jour Tempo" }]
+keywords = ["tempo", "edf", "rte", "ejp", "electricite", "electricity", "france", "home-automation"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Natural Language :: French",
+  "Topic :: Home Automation",
+]
+
+[project.urls]
+Homepage = "https://jourtempo.fr/api/"
+Documentation = "https://jourtempo.fr/api/"
+Source = "https://github.com/jourtempo/jourtempo-python"
+
+[tool.setuptools.packages.find]
+where = ["src"]
